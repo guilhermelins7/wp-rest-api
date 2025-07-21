@@ -1,3 +1,8 @@
-<?php wp_head() ?>
-<p>API</p>
-<?php wp_footer() ?>
+<?php 
+
+$template_directory = get_template_directory();
+
+require_once $template_directory . '/custom-post-types/produto.php';
+require_once $template_directory . '/custom-post-types/transacao.php';
+
+?>
